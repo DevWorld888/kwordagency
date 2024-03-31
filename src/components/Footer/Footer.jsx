@@ -30,7 +30,9 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faEnvelope} style={{color:"#FFF",marginRight:"5px"}} />
                 <span style={{color:"#FFF"}}> Escribenos a : info@kwordagency.com</span>
             </div>
-            <button className="btn btn-success" style={{background:"#25D366",fontWeight:'bold'}}>Escríbenos por WhatsApp</button>
+            <a href="https://wa.me/message/LTCNZ2HVXPKGA1" target="_blank">
+                <button className="btn btn-success" style={{background:"#25D366",fontWeight:'bold'}}>Escríbenos por WhatsApp</button>
+            </a>
             <p style={{color:"#FFF"}} className='mt-3'>Bucaramanga, Colombia</p>
             </div>
             {/* Columna 3 (vacia para ocupar espacio) */}
