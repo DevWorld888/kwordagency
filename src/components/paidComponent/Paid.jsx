@@ -7,7 +7,12 @@ const Paid = () => {
     const buttonStyle = {
         backgroundColor: '#4ABCC9',
         fontWeight: 'bold',
-        width: '8em'
+        width: '9em',
+        border:'none',
+        height:'3em',
+        borderRadius:'10px',
+        color:'#FFF'
+        
     }
     const bannerStyle = {
         backgroundColor: '#F2F2F2', // Color de fondo 
@@ -40,7 +45,9 @@ const Paid = () => {
                         <p style={{ fontSize: '1.5em', color: '#1E3868',textAlign:'justify' }}>
                             Diseñamos la estrategia para que tengas ventas consistentesen Facebook Ads, Google Ads y Tiktok Ads.Nuestro equipo de expertos en medios digitales, provee un servicio integral para la planeaci&oacute;n, optimizaci&oacute;n y medici&oacute;n de campañas de pauta digital.
                         </p>
-                        <button className='btn btn-primary' style={buttonStyle}>Cont&aacute;ctanos</button>
+                        <a href='#contact'>
+                            <button className='btn btn-primary' style={buttonStyle}>Cont&aacute;ctanos</button>
+                        </a>
                     </div>
 
                 </div>

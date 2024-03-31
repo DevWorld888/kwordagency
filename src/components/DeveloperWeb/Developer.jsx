@@ -6,7 +6,12 @@ const Developer = () => {
     const buttonStyle = {
         backgroundColor: '#4ABCC9',
         fontWeight: 'bold',
-        width: '8em'
+        width: '9em',
+        border:'none',
+        height:'3em',
+        borderRadius:'10px',
+        color:'#FFF'
+        
     }
     const bannerStyle = {
         backgroundColor: '#F2F2F2', // Color de fondo 
@@ -39,7 +44,9 @@ const Developer = () => {
                         <p style={{ fontSize: '1.5em', color: '#1E3868', textAlign: 'justify' }}>
                             Diseñamos experiencias de usaurio memorables,traducidas en sitios web de primer nivel que aportan resultados a las metas de nuestros clientes.
                         </p>
-                        <button className='btn btn-primary' style={buttonStyle}>Cont&aacute;ctanos</button>
+                        <a href='#contact'>
+                            <button className='btn btn-primary' style={buttonStyle}>Cont&aacute;ctanos</button>
+                        </a>
                     </div>
 
                 </div>

@@ -28,9 +28,9 @@ const Footer = () => {
             </div>
             <div className="contact-info  mb-3">
                 <FontAwesomeIcon icon={faEnvelope} style={{color:"#FFF",marginRight:"5px"}} />
-                <span style={{color:"#FFF"}}> Escribenos a : info@example.com</span>
+                <span style={{color:"#FFF"}}> Escribenos a : info@kwordagency.com</span>
             </div>
-            <button className="btn btn-success">Escríbenos a WhatsApp</button>
+            <button className="btn btn-success" style={{background:"#25D366",fontWeight:'bold'}}>Escríbenos por WhatsApp</button>
             <p style={{color:"#FFF"}} className='mt-3'>Bucaramanga, Colombia</p>
             </div>
             {/* Columna 3 (vacia para ocupar espacio) */}

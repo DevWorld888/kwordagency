@@ -21,7 +21,7 @@ const NavComponent = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto justify-content-center" style={{ flex: 1, color:"#FFF"}}>
               <Nav.Link href="#home" style={{color:'#FFF',fontSize:'18px',fontWeight:'bold'}}>Inicio</Nav.Link>
-              <Nav.Link href="#services" style={{color:'#FFF',fontSize:'18px',fontWeight:'bold'}}>Servicios</Nav.Link>
+              <Nav.Link href="#consul" style={{color:'#FFF',fontSize:'18px',fontWeight:'bold'}}>Servicios</Nav.Link>
               <Nav.Link href="#contact" style={{color:'#FFF',fontSize:'18px',fontWeight:'bold',backgroundColor:'#4ABCC9',borderRadius:'15px'}}>Cont&aacute;ctanos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
