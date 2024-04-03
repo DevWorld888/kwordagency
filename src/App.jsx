@@ -10,7 +10,6 @@ import Consultoria from './components/consulComponent/Consultoria';
 import Developer from './components/DeveloperWeb/Developer';
 import Contact from './components/contactComponent/Contact';
 import Footer from './components/Footer/Footer';
-
 function App() {
   
 

@@ -29,8 +29,9 @@ const Banner = () => {
                 <div className="row align-items-center">
                     {/* Texto a la izquierda */}
                     <div className="col-md-6">
-                        <h2 style={titleStyle} >Agencia de Marketing </h2>
-                        <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }}>Inmobiliario</span>
+                        <h2 style={titleStyle} >Agencia de </h2>
+                        <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }}>Performance</span>
+                        <h2 style={titleStyle} >Marketing</h2>
                         <p style={{ fontSize: '1.5em', color: '#1E3868' }}>Escalamos tus ventas con anuncios en Facebook, Instagram Y Google.</p>
                         <a href='#contact'>
                         <button className='btn btn-primary' style={buttonStyle}>Cont&aacute;ctanos</button>
