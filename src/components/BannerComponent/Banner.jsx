@@ -4,9 +4,11 @@ import { motion } from 'framer-motion';
 
 const Banner = () => {
     //Styles
+    
     const titleStyle = {
         color: '#1E3868',
-        fontSize: '3em'
+        fontSize: '3.4em',
+        
     };
     const buttonStyle = {
         backgroundColor: '#4ABCC9',
@@ -28,13 +30,13 @@ const Banner = () => {
             <div className="container my-5" >
                 <div className="row align-items-center">
                     {/* Texto a la izquierda */}
-                    <div className="col-md-6">
-                        <h2 style={titleStyle} >Agencia de </h2>
-                        <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }}>Performance</span>
-                        <h2 style={titleStyle} >Marketing</h2>
-                        <p style={{ fontSize: '1.5em', color: '#1E3868' }}>Escalamos tus ventas con anuncios en Facebook, Instagram Y Google.</p>
+                    <div className="col-md-6" >
+                        <h2 style={titleStyle} className='mainFontRegular'>Agencia de </h2>
+                        <span style={{ fontWeight: 'bold', fontSize: '3.4em', color: '#1E3868' }} className='mainFontBold'>Performance</span>
+                        <h2 style={titleStyle} className='mainFontRegular'>Marketing</h2>
+                        <p style={{ fontSize: '1.7em', color: '#1E3868' }} className='mainFontRegular'>Escalamos tus ventas con anuncios en Facebook, Instagram Y Google.</p>
                         <a href='#contact'>
-                        <button className='btn btn-primary' style={buttonStyle}>Cont&aacute;ctanos</button>
+                        <button className='btn btn-primary mainFontBold' style={buttonStyle} >Cont&aacute;ctanos</button>
                         </a>
                     </div>
                     {/* Imagen a la derecha  */}

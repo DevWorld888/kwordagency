@@ -32,9 +32,8 @@ const Contact = () => {
                 <div className="row align-items-center">
                     {/* Texto a la izquierda */}
                     <div className="col-md-6">
-                        <h2 style={titleStyle}>¿Cuál es tu reto en Marketing Digital? </h2>
-                        <p style={{ fontSize: '1.5em', color: '#1E3868' }}>Completa los datos de el formulario y te contactaremos en las próximas horas. También puedes escribirnos a</p>
-                        <span style={{ fontWeight: 'bold', fontSize: '1.5em', color: '#1E3868' }}>info@kwordagency.com</span>
+                        <h2 style={titleStyle} className='mainFontBold'>¿Cuál es tu reto en Marketing Digital? </h2>
+                        <p style={{ fontSize: '1.5em', color: '#1E3868' }} className='mainFontRegular'>Completa los datos de el formulario y te contactaremos en las próximas horas. También puedes escribirnos a <b>info@kwordagency.com</b></p>
                     </div>
                     {/* Imagen a la derecha */}
                     <div className="col-md-6">
@@ -85,7 +84,7 @@ const Contact = () => {
                             >
                                 {({ isSubmitting }) => (
                                     <Form className="p-3" style={{border: '6px solid #1E3868',borderRadius:'20px', backgroundColor: '#FFF'}}>
-                                        <h2 className="text-center mb-4" style={{color: '#1E3868', fontWeight:'bold'}}>Contáctanos</h2>
+                                        <h2 className="text-center mb-4 mainFontBold" style={{color: '#1E3868', fontWeight:'bold'}} >Contáctanos</h2>
                                         <div className="form-group mb-2">
                                             <Field type="text" className="form-control" placeholder="Nombre" name="name"  id="name" style={{ backgroundColor: '#E3E1D9' }} />
                                             <ErrorMessage name="name" component="div" className="text-danger" />
@@ -124,7 +123,7 @@ const Contact = () => {
                                             <ErrorMessage name="message" component="div" className="text-danger" />
                                         </div>
                                         <div className="text-center">
-                                            <button type="submit" className="btn btn-primary" style={buttonStyle} disabled={isSubmitting}>Enviar</button>
+                                            <button type="submit" className="btn btn-primary mainFontBold" style={buttonStyle} disabled={isSubmitting}>Enviar</button>
                                         </div>
                                     </Form>
                                 )}

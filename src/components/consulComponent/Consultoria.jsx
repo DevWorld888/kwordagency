@@ -23,12 +23,12 @@ export default function Consultoria() {
                 <div className="row align-items-center">
                     {/* Texto a la izquierda */}
                     <div className="col-md-6">
-                        <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }}>Consultor&iacute;a</span>
-                        <p style={{ fontSize: '1.5em', color: '#1E3868', textAlign: 'justify' }}>
+                        <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }} className='mainFontBold'>Consultor&iacute;a</span>
+                        <p style={{ fontSize: '1.5em', color: '#1E3868', textAlign: 'justify' }} className='mainFontRegular'>
                             Revisamos tus campañas de Facebook ads o Google ads y te damos una lista de recomendaciones para mejorar tus resultados. Adem&aacute;s, tendr&aacute;s un seguimiento para ayudarte a mantener o incluso escalar tus ventas.
                         </p>
                         <a href='#contact'>
-                            <button className='btn btn-primary' style={buttonStyle}>Cont&aacute;ctanos</button>
+                            <button className='btn btn-primary mainFontBold' style={buttonStyle}>Cont&aacute;ctanos</button>
                         </a>
                     </div>
                     {/* Imagen a la derecha  */}

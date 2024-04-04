@@ -41,12 +41,12 @@ const Paid = () => {
                     </div>
                     {/* Texto a la izquierda */}
                     <div className="col-md-6">
-                        <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }}>Paid Media</span>
-                        <p style={{ fontSize: '1.5em', color: '#1E3868',textAlign:'justify' }}>
-                            Diseñamos la estrategia para que tengas ventas consistentesen Facebook Ads, Google Ads y Tiktok Ads.Nuestro equipo de expertos en medios digitales, provee un servicio integral para la planeaci&oacute;n, optimizaci&oacute;n y medici&oacute;n de campañas de pauta digital.
+                        <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }} className='mainFontBold'>Paid Media</span>
+                        <p style={{ fontSize: '1.5em', color: '#1E3868',textAlign:'justify' }} className='mainFontRegular'>
+                            Diseñamos la estrategia para que tengas ventas consistentes Facebook Ads, Google Ads y Tiktok Ads. Nuestro equipo de expertos en medios digitales, provee un servicio integral para la planeaci&oacute;n, optimizaci&oacute;n y medici&oacute;n de campañas de pauta digital.
                         </p>
                         <a href='#contact'>
-                            <button className='btn btn-primary' style={buttonStyle}>Cont&aacute;ctanos</button>
+                            <button className='btn btn-primary mainFontBold' style={buttonStyle}>Cont&aacute;ctanos</button>
                         </a>
                     </div>
 

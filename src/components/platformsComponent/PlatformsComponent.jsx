@@ -11,7 +11,7 @@ export default function PlatformsComponent() {
             <div className="container my-5" >
                 <div className="row align-items-center">
                     <div className="col-md-6 mb-3">
-                        <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }}>Plataformas</span>
+                        <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }} className='mainFontBold'>Plataformas</span>
                     </div>
                     <div className="col-md-3">
                         <img src={facebook} alt="Descripción de la imagen" className="img-fluid" width={200}/>

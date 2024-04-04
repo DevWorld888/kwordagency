@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'MiFuenteAltone';
+    src: url('../src/fonts/AltoneTrial-Bold.ttf') format('truetype');
+   
+  }
+@font-face {
+    font-family: 'AltoneRegular';
+    src: url('../src/fonts/AltoneTrial-Regular.ttf') format('truetype');
+   
+  }
+.mainFontBold {
+    font-family: 'MiFuenteAltone';
+}
+.mainFontRegular {
+    font-family: 'AltoneRegular';
+}
+  
