@@ -10,6 +10,7 @@ import Consultoria from './components/consulComponent/Consultoria';
 import Developer from './components/DeveloperWeb/Developer';
 import Contact from './components/contactComponent/Contact';
 import Footer from './components/Footer/Footer';
+import CallAction from './components/CallAction/CallAction';
 function App() {
   
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <NavComponent/>
       <Banner />
+      <CallAction/>
       <PlatformsComponent/>
       <Paid/>
       <Consultoria/>
