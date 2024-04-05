@@ -8,7 +8,7 @@ const Contact = () => {
      const [alertMessage, setAlertMessage] = useState(null);
     // Estilos
     const titleStyle = {
-        color: '#1E3868',
+        color: '#FFF',
         fontSize: '3.5em'
     };
     const buttonStyle = {
@@ -21,7 +21,7 @@ const Contact = () => {
         color:'#FFF' 
     };
     const bannerStyle = {
-        backgroundColor: '#F2F2F2', // Color de fondo 
+        backgroundColor: '#1E3868', // Color de fondo 
         padding: '20px',
     };
     // Fin estilos
@@ -33,7 +33,7 @@ const Contact = () => {
                     {/* Texto a la izquierda */}
                     <div className="col-md-6">
                         <h2 style={titleStyle} className='mainFontBold'>¿Cuál es tu reto en Marketing Digital? </h2>
-                        <p style={{ fontSize: '1.5em', color: '#1E3868' }} className='mainFontRegular'>Completa los datos de el formulario y te contactaremos en las próximas horas. También puedes escribirnos a <b>info@kwordagency.com</b></p>
+                        <p style={{ fontSize: '1.5em', color: '#FFF' }} className='mainFontRegular'>Completa los datos de el formulario y te contactaremos en las próximas horas. También puedes escribirnos a <b>info@kwordagency.com</b></p>
                     </div>
                     {/* Imagen a la derecha */}
                     <div className="col-md-6">
@@ -83,7 +83,7 @@ const Contact = () => {
                                 }}
                             >
                                 {({ isSubmitting }) => (
-                                    <Form className="p-3" style={{border: '6px solid #1E3868',borderRadius:'20px', backgroundColor: '#FFF'}}>
+                                    <Form className="p-3" style={{border: '6px solid #B4B4B8',borderRadius:'20px', backgroundColor: '#FFF'}}>
                                         <h2 className="text-center mb-4 mainFontBold" style={{color: '#1E3868', fontWeight:'bold'}} >Contáctanos</h2>
                                         <div className="form-group mb-2">
                                             <Field type="text" className="form-control" placeholder="Nombre" name="name"  id="name" style={{ backgroundColor: '#E3E1D9' }} />
