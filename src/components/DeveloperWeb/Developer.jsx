@@ -45,7 +45,7 @@ const Developer = () => {
                             Diseñamos experiencias de usuario memorables, traducidas en sitios web de primer nivel que aportan resultados a las metas de nuestros clientes.
                         </p>
                         <a href='#contact'>
-                            <button className='btn btn-primary mainFontBold' style={buttonStyle}>Cont&aacute;ctanos</button>
+                            <button className='btn btn-primary mainFontBold shadow' style={buttonStyle}>Cont&aacute;ctanos</button>
                         </a>
                     </div>
 

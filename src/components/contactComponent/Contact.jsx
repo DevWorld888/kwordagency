@@ -123,7 +123,7 @@ const Contact = () => {
                                             <ErrorMessage name="message" component="div" className="text-danger" />
                                         </div>
                                         <div className="text-center">
-                                            <button type="submit" className="btn btn-primary mainFontBold" style={buttonStyle} disabled={isSubmitting}>Enviar</button>
+                                            <button type="submit shadow" className="btn btn-primary mainFontBold" style={buttonStyle} disabled={isSubmitting}>Enviar</button>
                                         </div>
                                     </Form>
                                 )}

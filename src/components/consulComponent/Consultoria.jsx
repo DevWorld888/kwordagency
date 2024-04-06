@@ -28,7 +28,7 @@ export default function Consultoria() {
                             Revisamos tus campañas de Facebook ads o Google ads y te damos una lista de recomendaciones para mejorar tus resultados. Adem&aacute;s, tendr&aacute;s un seguimiento para ayudarte a mantener o incluso escalar tus ventas.
                         </p>
                         <a href='#contact'>
-                            <button className='btn btn-primary mainFontBold' style={buttonStyle}>Cont&aacute;ctanos</button>
+                            <button className='btn btn-primary mainFontBold shadow' style={buttonStyle}>Cont&aacute;ctanos</button>
                         </a>
                     </div>
                     {/* Imagen a la derecha  */}

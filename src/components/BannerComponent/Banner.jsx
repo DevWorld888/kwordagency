@@ -1,14 +1,13 @@
 
-import banner from './images/banner2.png'
+import banner from './images/banner4.png'
 import { motion } from 'framer-motion';
 
 const Banner = () => {
     //Styles
-    
+
     const titleStyle = {
         color: '#1E3868',
-        fontSize: '3.4em',
-        
+        fontSize:'3.4em',
     };
     const buttonStyle = {
         backgroundColor: '#4ABCC9',
@@ -21,9 +20,10 @@ const Banner = () => {
 
     }
     const bannerStyle = {
-        backgroundColor: '#F2F2F2', // Color de fondo 
+        backgroundColor: '#F2F2F2', // Color de fondo
         padding: '20px',
     };
+
     //endStyles
     return (
         <div style={bannerStyle} id='home'>
@@ -31,12 +31,12 @@ const Banner = () => {
                 <div className="row align-items-center">
                     {/* Texto a la izquierda */}
                     <div className="col-md-6" >
-                        <h2 style={titleStyle} className='mainFontRegular'>Agencia de </h2>
-                        <span style={{ fontWeight: 'bold', fontSize: '3.4em', color: '#1E3868' }} className='mainFontBold'>Performance</span>
-                        <h2 style={titleStyle} className='mainFontRegular'>Marketing</h2>
+                        <div style={titleStyle} className='mainFontRegular mi-span'>Agencia de</div>
+                        <div style={titleStyle} className='mainFontBold mi-span performanceTxt'>Performance</div>
+                        <span style={titleStyle} className='mainFontRegular mi-span'>Marketing</span>
                         <p style={{ fontSize: '1.7em', color: '#1E3868' }} className='mainFontRegular'>Escalamos tus ventas con anuncios en Facebook, Instagram Y Google.</p>
                         <a href='#contact'>
-                        <button className='btn btn-primary mainFontBold' style={buttonStyle} >Cont&aacute;ctanos</button>
+                        <button className='btn btn-primary mainFontBold shadow' style={buttonStyle} >Cont&aacute;ctanos</button>
                         </a>
                     </div>
                     {/* Imagen a la derecha  */}

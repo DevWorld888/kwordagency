@@ -19,5 +19,29 @@
     font-family: 'AltoneRegular';
 }
 
+.mi-span {
+  display: block;
+  margin: 0 !important;
+  line-height: 1;
+}
 
+.performanceTxt {
+  letter-spacing: -2px;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
   
+
+@media (min-width: 600px) {
+  .performanceTxt {
+      letter-spacing: 1px; /* Pantallas medianas */
+  }
+}
+
+@media (min-width: 1000px) {
+  .performanceTxt {
+      letter-spacing: 8px; /* Pantallas grandes */
+  }
+}
