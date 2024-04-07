@@ -32,11 +32,21 @@
 .shadow {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-  
+
+.rowReverse{
+  display: flex;
+}
 
 @media (min-width: 600px) {
   .performanceTxt {
       letter-spacing: 1px; /* Pantallas medianas */
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .rowReverse {
+    flex-direction: column-reverse;
   }
 }
 

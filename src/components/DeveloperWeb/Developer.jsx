@@ -15,13 +15,13 @@ const Developer = () => {
     }
     const bannerStyle = {
         backgroundColor: '#F2F2F2', // Color de fondo 
-        padding: '20px',
+        padding: '1px 10px',
     };
     //endStyles
     return (
         <div style={bannerStyle}>
-            <div className="container my-5" >
-                <div className="row align-items-center">
+            <div className="container my-3"  >
+                <div className="row align-items-center rowReverse" >
                     {/* Imagen a la derecha  */}
                     <div className="col-md-6">
                         <motion.div
@@ -48,7 +48,6 @@ const Developer = () => {
                             <button className='btn btn-primary mainFontBold shadow' style={buttonStyle}>Cont&aacute;ctanos</button>
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>

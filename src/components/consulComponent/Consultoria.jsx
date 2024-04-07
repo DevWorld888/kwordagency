@@ -14,7 +14,7 @@ export default function Consultoria() {
     }
     const bannerStyle = {
         backgroundColor: '#F2F2F2', // Color de fondo 
-        padding: '20px',
+        padding: '1px 10px',
     };
     //endStyles
     return (
