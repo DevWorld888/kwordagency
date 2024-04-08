@@ -13,6 +13,8 @@ import Developer from './components/DeveloperWeb/Developer';
 import Contact from './components/contactComponent/Contact';
 import Footer from './components/Footer/Footer';
 import CallAction from './components/CallAction/CallAction';
+import ChangesLives from "./components/changeLivesComponent/ChangesLives";
+import WhatsAppButton from "./components/WhatsappButton/WhatsAppButton ";
 
 function App() {
   
@@ -27,7 +29,9 @@ function App() {
       <Developer/>
       <PlatformsComponent/>
       <Contact/>
+      <ChangesLives/>
       <Footer/>
+      <WhatsAppButton/>
     </>
   )
 }

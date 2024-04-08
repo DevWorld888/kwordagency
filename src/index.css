@@ -37,6 +37,20 @@
   display: flex;
 }
 
+.slidedivImg {
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  justify-items: center!important;
+  align-content: center;
+}
+
+.titleChangelife {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #1E3868 ;
+}
+
 @media (min-width: 600px) {
   .performanceTxt {
       letter-spacing: 1px; /* Pantallas medianas */
@@ -53,5 +67,8 @@
 @media (min-width: 1000px) {
   .performanceTxt {
       letter-spacing: 8px; /* Pantallas grandes */
+  }
+  .titleChangelife {
+    font-size: 3em;
   }
 }
