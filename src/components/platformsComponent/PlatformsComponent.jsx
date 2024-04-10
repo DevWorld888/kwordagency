@@ -32,15 +32,26 @@ const PlatformsComponent = () => {
     tap: { scale: 0.9 }, // Escalar la imagen al 90% cuando se hace clic
   };
   return (
-    <div className="container" style={{width:'70%'}}>
+    <div className="container" style={{ width: '70%' }}>
       <h2 className="text-center mt-5 mb-4 mainFontBold" style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }} >Plataformas</h2>
       <div className="row mb-5 text-center">
-        <div className="col-md-3 col-sm-6 mb-3" style={{display:'flex',alignItems:'center',justifyItems:'center',justifyContent:'center'}}>
+        <div className="col-md-3 col-sm-6 mb-3">
           <motion.img
-            src={shopify}
-            alt="Platform 1"
-            width={200}
-            height={200}
+            src={facebookAds}
+            alt="Platform 2"
+            className="img-fluid"
+            variants={scaleVariant}
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="animate"
+          />
+
+        </div>
+        <div className="col-md-3 col-sm-6 mb-3">
+          <motion.img
+            src={googleAds}
+            alt="Platform 2"
             className="img-fluid"
             variants={scaleVariant}
             whileHover="hover"
@@ -61,10 +72,12 @@ const PlatformsComponent = () => {
             animate="animate"
           />
         </div>
-        <div className="col-md-3 col-sm-6 mb-3">
+        <div className="col-md-3 col-sm-6 mb-3" style={{ display: 'flex', alignItems: 'center', justifyItems: 'center', justifyContent: 'center' }}>
           <motion.img
-            src={googleAds}
-            alt="Platform 2"
+            src={shopify}
+            alt="Platform 1"
+            width={200}
+            height={200}
             className="img-fluid"
             variants={scaleVariant}
             whileHover="hover"
@@ -72,19 +85,6 @@ const PlatformsComponent = () => {
             initial="initial"
             animate="animate"
           />
-        </div>
-        <div className="col-md-3 col-sm-6 mb-3">
-          <motion.img
-            src={facebookAds}
-            alt="Platform 2"
-            className="img-fluid"
-            variants={scaleVariant}
-            whileHover="hover"
-            whileTap="tap"
-            initial="initial"
-            animate="animate"
-          />
-
         </div>
       </div>
     </div>
