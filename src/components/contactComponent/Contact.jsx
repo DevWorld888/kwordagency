@@ -67,6 +67,7 @@ const Contact = () => {
                                         dataLayer: {
                                           event: 'form_submit',
                                           formName: 'example_form',
+                                          formId: 'formToSendTagManager'
                                         },
                                     });
                                     console.log('finalizo rastreo');
