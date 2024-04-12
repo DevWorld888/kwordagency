@@ -2,7 +2,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import emailjs from 'emailjs-com'; // Importa emailjs
 import { useState } from 'react';
-
+import { gtag_report_conversion } from './analitycs.js';
 const Contact = () => {
     // Estado para el mensaje de alerta
      const [alertMessage, setAlertMessage] = useState(null);
@@ -25,7 +25,9 @@ const Contact = () => {
         padding: '20px',
     };
     // Fin estilos
-
+    const handleClick = () => {
+        gtag_report_conversion('https://www.kwordagency.com/#contact');
+    };
     return (
         <div style={bannerStyle}  id="contact">
             <div className="container my-5" >
@@ -123,7 +125,7 @@ const Contact = () => {
                                             <ErrorMessage name="message" component="div" className="text-danger" />
                                         </div>
                                         <div className="text-center">
-                                            <button type="submit shadow" className="btn btn-primary mainFontBold" style={buttonStyle} disabled={isSubmitting}>Enviar</button>
+                                            <button type="submit shadow" className="btn btn-primary mainFontBold" style={buttonStyle} disabled={isSubmitting} onClick={handleClick}>Enviar</button>
                                         </div>
                                     </Form>
                                 )}
