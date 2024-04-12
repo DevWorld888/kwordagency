@@ -69,6 +69,8 @@ const Contact = () => {
                                           formName: 'example_form',
                                         },
                                     });
+                                    console.log('finalizo rastreo');
+                                    
                                     // Enviar el formulario utilizando emailjs
                                     emailjs.send('service_n13x0xu', 'template_h92a854', values, 'Ugh5dOBr-C24shgfl')
                                         .then((response) => {
