@@ -66,8 +66,8 @@ const Contact = () => {
                                     TagManager.dataLayer({
                                         dataLayer: {
                                           event: 'form_submit',
-                                          formName: 'example_form',
-                                          formId: 'formToSendTagManager'
+                                          formName: 'contactform',
+                                          formId: 'formToSendTagManager',
                                         },
                                     });
                                     console.log('finalizo rastreo');
@@ -94,7 +94,7 @@ const Contact = () => {
                                 }}
                             >
                                 {({ isSubmitting }) => (
-                                    <Form className="p-3" style={{border: '6px solid #B4B4B8',borderRadius:'20px', backgroundColor: '#FFF'}} id='formToSendTagManager'>
+                                    <Form className="p-3" style={{border: '6px solid #B4B4B8',borderRadius:'20px', backgroundColor: '#FFF'}} id='formToSendTagManager' formId='formToSendTagManager' formName='contactform'>
                                         <h2 className="text-center mb-4 mainFontBold" style={{color: '#1E3868', fontWeight:'bold'}} >Contáctanos</h2>
                                         <div className="form-group mb-2">
                                             <Field type="text" className="form-control" placeholder="Nombre" name="name"  id="name" style={{ backgroundColor: '#E3E1D9' }} />
