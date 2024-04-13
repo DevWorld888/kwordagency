@@ -14,8 +14,8 @@ const Contact = () => {
         setShowModal(true);
         TagManager.dataLayer({
             dataLayer: {
-                event: 'ModalTag',
-                modalName: 'ModalTag',
+                event: 'modal_displayed',
+                modalName: 'contactModal',
             },
         });
     };
