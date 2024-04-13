@@ -12,12 +12,12 @@ const Contact = () => {
     const handleCloseModal = () => setShowModal(false);
     const handleShowModal = () => {
         setShowModal(true);
-        // TagManager.dataLayer({
-        //     dataLayer: {
-        //         event: 'modal_displayed',
-        //         modalName: 'contactModal',
-        //     },
-        // });
+        TagManager.dataLayer({
+            dataLayer: {
+                event: 'ModalTag',
+                modalName: 'ModalTag',
+            },
+        });
     };
     // Estilos
     const titleStyle = {
@@ -85,6 +85,7 @@ const Contact = () => {
                                             handleShowModal()
                                             TagManager.dataLayer({
                                                 dataLayer: {
+                                                    
                                                     event: 'form_submit',
                                                     formName: 'contactform',
                                                     formId: 'formToSendTagManager',
