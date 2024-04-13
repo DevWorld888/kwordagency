@@ -1,11 +1,24 @@
 
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Modal, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com'; // Importa emailjs
 import { useState } from 'react';
 import TagManager from 'react-gtm-module';
 const Contact = () => {
     // Estado para el mensaje de alerta
-     const [alertMessage, setAlertMessage] = useState(null);
+    const [alertMessage, setAlertMessage] = useState(null);
+    const [showModal, setShowModal] = useState(false); // Estado para controlar la visibilidad del modal
+
+    const handleCloseModal = () => setShowModal(false);
+    const handleShowModal = () => {
+        setShowModal(true);
+        // TagManager.dataLayer({
+        //     dataLayer: {
+        //         event: 'modal_displayed',
+        //         modalName: 'contactModal',
+        //     },
+        // });
+    };
     // Estilos
     const titleStyle = {
         color: '#FFF',
@@ -15,10 +28,10 @@ const Contact = () => {
         backgroundColor: '#4ABCC9',
         fontWeight: 'bold',
         width: '9em',
-        border:'none',
-        height:'3em',
-        borderRadius:'10px',
-        color:'#FFF' 
+        border: 'none',
+        height: '3em',
+        borderRadius: '10px',
+        color: '#FFF'
     };
     const bannerStyle = {
         backgroundColor: '#1E3868', // Color de fondo 
@@ -29,7 +42,7 @@ const Contact = () => {
     //     gtag_report_conversion('https://www.kwordagency.com/#contact');
     // };
     return (
-        <div style={bannerStyle}  id="contact">
+        <div style={bannerStyle} id="contact">
             <div className="container my-5" >
                 <div className="row align-items-center">
                     {/* Texto a la izquierda */}
@@ -62,23 +75,22 @@ const Contact = () => {
                                     // Agrega más validaciones si es necesario
                                     return errors;
                                 }}
-                                onSubmit={(values, { setSubmitting,resetForm }) => {
-                                    TagManager.dataLayer({
-                                        dataLayer: {
-                                          event: 'form_submit',
-                                          formName: 'contactform',
-                                          formId: 'formToSendTagManager',
-                                        },
-                                    });
-                                    console.log('finalizo rastreo');
+                                onSubmit={(values, { setSubmitting, resetForm }) => {
                                     
                                     // Enviar el formulario utilizando emailjs
                                     emailjs.send('service_n13x0xu', 'template_h92a854', values, 'Ugh5dOBr-C24shgfl')
                                         .then((response) => {
                                             console.log('Correo enviado con éxito:', response.status, response.text);
                                             setAlertMessage('Mensaje enviado con éxito');
+                                            handleShowModal()
+                                            TagManager.dataLayer({
+                                                dataLayer: {
+                                                    event: 'form_submit',
+                                                    formName: 'contactform',
+                                                    formId: 'formToSendTagManager',
+                                                },
+                                            });
                                             resetForm()
-                                            
                                         })
                                         .catch((error) => {
                                             console.error('Error al enviar el correo:', error);
@@ -94,10 +106,10 @@ const Contact = () => {
                                 }}
                             >
                                 {({ isSubmitting }) => (
-                                    <Form className="p-3" style={{border: '6px solid #B4B4B8',borderRadius:'20px', backgroundColor: '#FFF'}} id='formToSendTagManager' formId='formToSendTagManager' formName='contactform'>
-                                        <h2 className="text-center mb-4 mainFontBold" style={{color: '#1E3868', fontWeight:'bold'}} >Contáctanos</h2>
+                                    <Form className="p-3" style={{ border: '6px solid #B4B4B8', borderRadius: '20px', backgroundColor: '#FFF' }} id='formToSendTagManager' formId='formToSendTagManager' formName='contactform'>
+                                        <h2 className="text-center mb-4 mainFontBold" style={{ color: '#1E3868', fontWeight: 'bold' }} >Contáctanos</h2>
                                         <div className="form-group mb-2">
-                                            <Field type="text" className="form-control" placeholder="Nombre" name="name"  id="name" style={{ backgroundColor: '#E3E1D9' }} />
+                                            <Field type="text" className="form-control" placeholder="Nombre" name="name" id="name" style={{ backgroundColor: '#E3E1D9' }} />
                                             <ErrorMessage name="name" component="div" className="text-danger" />
                                         </div>
                                         <div className="form-group mb-2">
@@ -139,6 +151,20 @@ const Contact = () => {
                                     </Form>
                                 )}
                             </Formik>
+                            {/* Modal Bootstrap */}
+                            <Modal show={showModal} onHide={handleCloseModal} id='ModalTag'>
+                                <Modal.Header closeButton>
+                                    <Modal.Title>¡Mensaje enviado con éxito!</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>
+                                    Tu mensaje ha sido enviado exitosamente. Nos pondremos en contacto contigo lo antes posible.
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Button variant="secondary" onClick={handleCloseModal}>
+                                        Cerrar
+                                    </Button>
+                                </Modal.Footer>
+                            </Modal>
                             {/* Alerta Bootstrap */}
                             {alertMessage && (
                                 <div className="alert alert-dismissible alert-success fade show mt-3" role="alert">
@@ -155,3 +181,16 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+// Crea un nuevo evento personalizado llamado "modal_displayed" y agrega una variable modalName para almacenar el nombre del modal.
+// Configura una nueva regla para activar una etiqueta cuando el evento "modal_displayed" ocurra.
+// Crea una etiqueta que realice el seguimiento deseado (por ejemplo, enviar un evento de Google Analytics) cuando se active la regla.
+// Con esto, estarás enviando un evento a GTM cada vez que se muestre el modal, y podrás realizar el seguimiento deseado utilizando las etiquetas y reglas configuradas en GTM.
+
+
+
+
+
+
+
