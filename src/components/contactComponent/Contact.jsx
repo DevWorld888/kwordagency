@@ -83,12 +83,14 @@ const Contact = () => {
                                             console.log('Correo enviado con éxito:', response.status, response.text);
                                             setAlertMessage('Mensaje enviado con éxito');
                                             handleShowModal()
-                                            TagManager.dataLayer({
+                                            TagManager.dataLayer.push({
                                                 dataLayer: {
-                                                    
-                                                    event: 'form_submit',
+                                                    event: 'formSubmit',
                                                     formName: 'contactform',
                                                     formId: 'formToSendTagManager',
+                                                    'gtm':{
+                                                        elementId: "formToSendTagManager",
+                                                    }
                                                 },
                                             });
                                             resetForm()
@@ -138,6 +140,7 @@ const Contact = () => {
                                                 <option value="HND">Honduras</option>
                                                 <option value="MEX">México</option>
                                                 <option value="PER">Perú</option>
+                                                <option value="PER">Republica Dominicana</option>
                                                 <option value="USA">Estados Unidos</option>
                                             </Field>
                                             <ErrorMessage name="country" component="div" className="text-danger" />
