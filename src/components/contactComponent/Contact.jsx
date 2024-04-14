@@ -83,7 +83,7 @@ const Contact = () => {
                                             console.log('Correo enviado con éxito:', response.status, response.text);
                                             setAlertMessage('Mensaje enviado con éxito');
                                             // handleShowModal()
-                                            TagManager.dataLayer.push({
+                                            TagManager.dataLayer({
                                                 dataLayer: {
                                                     event: 'formSubmit',
                                                     formName: 'contactform',
