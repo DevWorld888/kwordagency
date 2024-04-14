@@ -1,24 +1,24 @@
 
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { Modal, Button } from 'react-bootstrap';
+// import { Modal, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com'; // Importa emailjs
 import { useState } from 'react';
 import TagManager from 'react-gtm-module';
 const Contact = () => {
     // Estado para el mensaje de alerta
     const [alertMessage, setAlertMessage] = useState(null);
-    const [showModal, setShowModal] = useState(false); // Estado para controlar la visibilidad del modal
+    // const [showModal, setShowModal] = useState(false); // Estado para controlar la visibilidad del modal
 
-    const handleCloseModal = () => setShowModal(false);
-    const handleShowModal = () => {
-        setShowModal(true);
-        TagManager.dataLayer({
-            dataLayer: {
-                event: 'modal_displayed',
-                modalName: 'contactModal',
-            },
-        });
-    };
+    // const handleCloseModal = () => setShowModal(false);
+    // const handleShowModal = () => {
+    //     setShowModal(true);
+    //     TagManager.dataLayer({
+    //         dataLayer: {
+    //             event: 'modal_displayed',
+    //             modalName: 'contactModal',
+    //         },
+    //     });
+    // };
     // Estilos
     const titleStyle = {
         color: '#FFF',
@@ -82,7 +82,7 @@ const Contact = () => {
                                         .then((response) => {
                                             console.log('Correo enviado con éxito:', response.status, response.text);
                                             setAlertMessage('Mensaje enviado con éxito');
-                                            handleShowModal()
+                                            // handleShowModal()
                                             TagManager.dataLayer.push({
                                                 dataLayer: {
                                                     event: 'formSubmit',
@@ -156,7 +156,7 @@ const Contact = () => {
                                 )}
                             </Formik>
                             {/* Modal Bootstrap */}
-                            <Modal show={showModal} onHide={handleCloseModal} id='ModalTag'>
+                            {/*<Modal show={showModal} onHide={handleCloseModal} id='ModalTag'>
                                 <Modal.Header closeButton>
                                     <Modal.Title>¡Mensaje enviado con éxito!</Modal.Title>
                                 </Modal.Header>
@@ -168,7 +168,7 @@ const Contact = () => {
                                         Cerrar
                                     </Button>
                                 </Modal.Footer>
-                            </Modal>
+                                </Modal>*/}
                             {/* Alerta Bootstrap */}
                             {alertMessage && (
                                 <div className="alert alert-dismissible alert-success fade show mt-3" role="alert">
