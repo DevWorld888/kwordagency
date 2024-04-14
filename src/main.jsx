@@ -5,8 +5,8 @@ import './index.css'
 import TagManager from 'react-gtm-module';
 
 const tagManagerArgs = {
-  gtmId: 'GTM-WT3GZXTK', // Reemplaza con tu ID de contenedor
-  // gtmId: 'GTM-5FX3BLC4', // Reemplaza con tu ID de contenedor
+  gtmId: 'GTM-5FX3BLC4', // Reemplaza con tu ID de contenedor
+  // gtmId: 'GTM-WT3GZXTK', // Reemplaza con tu ID de contenedor
 };
 
 TagManager.initialize(tagManagerArgs)
