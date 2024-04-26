@@ -25,7 +25,7 @@ const Contact = () => {
         fontSize: '3.5em'
     };
     const buttonStyle = {
-        backgroundColor: '#4ABCC9',
+        backgroundColor: '#FF914D',
         fontWeight: 'bold',
         width: '9em',
         border: 'none',

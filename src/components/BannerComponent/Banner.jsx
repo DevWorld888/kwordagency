@@ -1,5 +1,5 @@
 
-import banner from './images/banner4.png'
+import banner from './images/banner5.png'
 // import { motion } from 'framer-motion';
 
 const Banner = () => {
@@ -24,7 +24,7 @@ const Banner = () => {
         fontSize: '3.4em',
     };
     const buttonStyle = {
-        backgroundColor: '#4ABCC9',
+        backgroundColor: '#FF914D',
         fontWeight: 'bold',
         width: '9em',
         border: 'none',

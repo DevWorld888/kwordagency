@@ -5,7 +5,7 @@ const Paid = () => {
     //Styles
     
     const buttonStyle = {
-        backgroundColor: '#4ABCC9',
+        backgroundColor: '#FF914D',
         fontWeight: 'bold',
         width: '9em',
         border:'none',
@@ -43,7 +43,7 @@ const Paid = () => {
                     <div className="col-md-6">
                         <span style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }} className='mainFontBold'>Paid Media</span>
                         <p style={{ fontSize: '1.5em', color: '#1E3868',textAlign:'justify' }} className='mainFontRegular'>
-                            Diseñamos la estrategia para que tengas ventas consistentes Facebook Ads, Google Ads y Tiktok Ads. Nuestro equipo de expertos en medios digitales, provee un servicio integral para la planeaci&oacute;n, optimizaci&oacute;n y medici&oacute;n de campañas de pauta digital.
+                            Diseñamos la estrategia para que tengas ventas consistentes Facebook Ads y  Google Ads. Nuestro equipo de expertos en medios digitales, provee un servicio integral para la planeaci&oacute;n, optimizaci&oacute;n y medici&oacute;n de campañas de pauta digital.
                         </p>
                         <a href='#contact'>
                             <button className='btn btn-primary mainFontBold shadow' style={buttonStyle}>Cont&aacute;ctanos</button>

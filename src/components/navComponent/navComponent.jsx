@@ -22,7 +22,7 @@ const NavComponent = () => {
             <Nav className=" justify-content-start gap-lg-5 " style={{ flex: 1, color:"#FFF"}}>
               <Nav.Link href="#home" style={{color:'#FFF',fontSize:'18px',fontWeight:'bold'}}>Inicio</Nav.Link>
               <Nav.Link href="#consul" style={{color:'#FFF',fontSize:'18px',fontWeight:'bold'}}>Servicios</Nav.Link>
-              <Nav.Link href="#contact" style={{color:'#FFF',fontSize:'18px',fontWeight:'bold',backgroundColor:'#4ABCC9',borderRadius:'11px',padding:'11px'}}>Trabaj&eacute;mos Juntos</Nav.Link>
+              <Nav.Link href="#contact" style={{color:'#FFF',fontSize:'18px',fontWeight:'bold',backgroundColor:'#FF914D',borderRadius:'11px',padding:'11px'}}>Trabaj&eacute;mos Juntos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

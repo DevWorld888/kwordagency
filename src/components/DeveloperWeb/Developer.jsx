@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Developer = () => {
 
     const buttonStyle = {
-        backgroundColor: '#4ABCC9',
+        backgroundColor: '#FF914D',
         fontWeight: 'bold',
         width: '9em',
         border:'none',
