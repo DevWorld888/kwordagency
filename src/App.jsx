@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 
 // import viteLogo from '/vite.svg'
-import { useEffect, useState } from "react";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,11 +25,11 @@ function App() {
       <NavComponent />
       <Banner />
       <CallAction />
+      <Contact />
+      <PlatformsComponent />
       <Paid />
       <Consultoria />
       <Developer />
-      <PlatformsComponent />
-      <Contact />
       <ChangesLives />
       <Footer />
       <WhatsAppButton />

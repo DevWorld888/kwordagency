@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import shopify from './images/shopify.png'
-import tiktokAds from './images/tiktok.png'
+
 import googleAds from './images/4.png'
 import facebookAds from './images/3.png'
 
@@ -32,10 +32,10 @@ const PlatformsComponent = () => {
     tap: { scale: 0.9 }, // Escalar la imagen al 90% cuando se hace clic
   };
   return (
-    <div className="container" style={{ width: '70%' }}>
+    <div className="container" style={{ width: '60%' }}>
       <h2 className="text-center mt-5 mb-4 mainFontBold" style={{ fontWeight: 'bold', fontSize: '3em', color: '#1E3868' }} >Plataformas</h2>
       <div className="row mb-5 text-center">
-        <div className="col-md-3 col-sm-6 mb-3">
+        <div className="col-md-4 col-sm-6 mb-3">
           <motion.img
             src={facebookAds}
             alt="Platform 2"
@@ -48,7 +48,7 @@ const PlatformsComponent = () => {
           />
 
         </div>
-        <div className="col-md-3 col-sm-6 mb-3">
+        <div className="col-md-4 col-sm-6 mb-3">
           <motion.img
             src={googleAds}
             alt="Platform 2"
@@ -60,19 +60,7 @@ const PlatformsComponent = () => {
             animate="animate"
           />
         </div>
-        <div className="col-md-3 col-sm-6 mb-3">
-          <motion.img
-            src={tiktokAds}
-            alt="Platform 2"
-            className="img-fluid"
-            variants={scaleVariant}
-            whileHover="hover"
-            whileTap="tap"
-            initial="initial"
-            animate="animate"
-          />
-        </div>
-        <div className="col-md-3 col-sm-6 mb-3" style={{ display: 'flex', alignItems: 'center', justifyItems: 'center', justifyContent: 'center' }}>
+        <div className="col-md-4 col-sm-6 mb-3" style={{ display: 'flex', alignItems: 'center', justifyItems: 'center', justifyContent: 'center' }}>
           <motion.img
             src={shopify}
             alt="Platform 1"

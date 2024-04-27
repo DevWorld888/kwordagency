@@ -21,7 +21,7 @@ const Banner = () => {
 
     const titleStyle = {
         color: '#1E3868',
-        fontSize: '3.4em',
+        fontSize: '3.1em',
     };
     const buttonStyle = {
         backgroundColor: '#FF914D',
@@ -47,7 +47,7 @@ const Banner = () => {
                     {/* Texto a la izquierda */}
                     <div className="col-md-6" >
                         <div style={titleStyle} className='mainFontRegular mi-span'>Agencia de</div>
-                        <div style={titleStyle} className='mainFontBold mi-span performanceTxt'>Performance</div>
+                        <div style={titleStyle} className='mainFontBold mi-span'>Performance</div>
                         <span style={titleStyle} className='mainFontRegular mi-span'>Marketing</span>
                         <p style={{ fontSize: '1.7em', color: '#1E3868' }} className='mainFontRegular'>Escalamos tus ventas con anuncios en Facebook, Instagram Y Google.</p>
                         <a href='#contact'>
